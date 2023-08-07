@@ -5,7 +5,6 @@ import ContactList from './components/ContactList';
 
 
 export default function App() {
-  const [contacts, setContacts] = useState(dummyContacts)
 
   return (
     <>
