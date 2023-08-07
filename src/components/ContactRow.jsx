@@ -1,11 +1,11 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 
-export default function ContactRow({ setSelectedContactid, contact }) {
+export default function ContactRow({ setSelectedContactId, contact }) {
     return (
         <tr
         onClick = {() => {
-            setSelectedContactid(contact.id);
+            setSelectedContactId(contact.id);
         }}>
             <td>{contact.name}</td>
             <td>{contact.email}</td>
