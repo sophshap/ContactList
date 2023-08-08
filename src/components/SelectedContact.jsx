@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-export default function SelectedContact({selectedContact, setSelectedContactId, selectedContactId}) {
-    const [contact, setContact] = useState(null);
+export default function SelectedContact({selectedContactId, setSelectedContactId}) {
+    const [contact, setContact] = useState({});
     useEffect(() => {
         async function fetchingFunction() {
             try {
@@ -17,7 +17,8 @@ export default function SelectedContact({selectedContact, setSelectedContactId, 
     }, [])
     return (
         <div>
-        {contact.name}
+        <p>{contact.name}</p>
+        <p>{contact.email}</p>
         </div>
     )
 }
