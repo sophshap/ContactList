@@ -22,8 +22,8 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
     }, [])
     return (
         <div>
-        <p>{contact.name}</p>
-        <p>{contact.email}</p>
+        <p>Name: {contact.name}</p>
+        <p>Email: {contact.email}</p>
         <button onClick = {() => {setSelectedContactId(null)}}>Back to List</button>
         </div>
     )
